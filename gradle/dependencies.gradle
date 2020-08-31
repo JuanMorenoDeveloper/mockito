@@ -26,6 +26,7 @@ libraries.errorproneTestApi = "com.google.errorprone:error_prone_test_helpers:${
 libraries.autoservice = "com.google.auto.service:auto-service:1.0-rc5"
 
 libraries.objenesis = 'org.objenesis:objenesis:3.1'
+libraries.objenesisCompatibleAndroid = '2.6'
 
 libraries.asm = 'org.ow2.asm:asm:7.0'
 

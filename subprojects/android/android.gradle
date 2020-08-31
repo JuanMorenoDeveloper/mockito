@@ -5,6 +5,12 @@ apply from: "$rootDir/gradle/java-library.gradle"
 dependencies {
     compile project.rootProject
     compile libraries.bytebuddyandroid
+    compile("org.objenesis:objenesis") {
+        version {
+            strictly libraries.objenesisCompatibleAndroid
+        }
+        because("MethodHandle class dependency breaks on Android with minSdkVersion<26")
+    }
 }
 
 tasks.javadoc.enabled = false
